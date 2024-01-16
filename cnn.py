@@ -46,9 +46,9 @@ print("after compile")
 history = model.fit(train_images, train_labels, epochs=1, batch_size=1,
                     validation_data=(test_images, test_labels))
 
-model_json = model.to_json()
-with open("model.json", "w") as json_file:
-    json_file.write(model_json)
+##model_json = model.to_json()
+##with open("model.json", "w") as json_file:
+  ##  json_file.write(model_json)
 
-model.save_weights("model.h5")
-print("Saved model to disk")
+##model.save_weights("model.h5")
+##print("Saved model to disk")
