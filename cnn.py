@@ -38,13 +38,13 @@ model.add(layers.Dense(10))
 print("before compile")
 
 model.compile(optimizer='adam',
-              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-              metrics=['accuracy'])
+loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+metrics=['accuracy'])
 
 print("after compile")
 
 history = model.fit(train_images, train_labels, epochs=1, batch_size=1,
-                    validation_data=(test_images, test_labels))
+validation_data=(test_images, test_labels))
 
 ##model_json = model.to_json()
 ##with open("model.json", "w") as json_file:

@@ -1,6 +1,5 @@
 import tensorflow as tf
 import csv
-
 from tensorflow.keras import datasets, layers, models
 import matplotlib.pyplot as plt
 
