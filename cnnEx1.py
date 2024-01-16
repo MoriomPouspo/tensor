@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 
 (train_images, train_labels), (test_images, test_labels) = datasets.cifar10.load_data()
 
+
+
 # Normalize pixel values to be between 0 and 1
 train_images, test_images = train_images / 255.0, test_images / 255.0
 
@@ -40,18 +42,29 @@ model.compile(optimizer='adam',
               loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
               metrics=['accuracy'])
 
-history = model.fit(train_images, train_labels, epochs=1, 
+epoch = 2
+batch_size = 2
+history = model.fit(train_images, train_labels, epochs=epoch,batch_size=5,
                     validation_data=(test_images, test_labels))
 
 # Extract accuracy values from the training history
-epoch = 1
-training_accuracy = history.history['accuracy'][0]
-validation_accuracy = history.history['val_accuracy'][0]
+training_accuracy = 0.0
+validation_accuracy = 0.0
+loss=100
+validation_loss = 100
+
+for i in range(epoch):
+    training_accuracy = max(training_accuracy, history.history['accuracy'][0])
+    validation_accuracy = max(validation_accuracy,history.history['val_accuracy'][0])
+    loss = min(loss,history.history['loss'][0])
+    validation_loss = min(validation_loss,history.history['val_loss'][0])
+
+
 
 # Open the CSV file in append mode
 with open("csvDemo.csv", mode='a', newline='') as file:
     csv_writer = csv.writer(file)
-    csv_writer.writerow([epoch, training_accuracy, validation_accuracy])
+    csv_writer.writerow([epoch, batch_size, training_accuracy, validation_accuracy, loss, validation_loss])
 
 plt.plot(history.history['accuracy'], label='accuracy')
 plt.plot(history.history['val_accuracy'], label = 'val_accuracy')

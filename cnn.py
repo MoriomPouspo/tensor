@@ -4,6 +4,18 @@ import matplotlib.pyplot as plt
 
 (train_images, train_labels), (test_images, test_labels) = datasets.cifar10.load_data()
 
+num_train_images = 5000
+num_test_images = 5000
+
+# Take the specified number of train images and labels
+train_images = train_images[:num_train_images]
+train_labels = train_labels[:num_train_images]
+
+# Take the specified number of train images and labels
+test_images = test_images[:num_test_images]
+test_labels = test_labels[:num_test_images]
+
+
 # Normalize pixel values to be between 0 and 1
 train_images, test_images = train_images / 255.0, test_images / 255.0
 
