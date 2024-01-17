@@ -22,3 +22,15 @@ with open(output_file, mode='w', newline='') as csv_file:
     csv_writer.writerows(data[1:])
 
 print(f'Data has been written to {output_file}')
+
+"""
+# Extract accuracy values from the training history
+epoch = 2
+training_accuracy = history.history['accuracy'][0]
+validation_accuracy = history.history['val_accuracy'][0]
+
+# Open the CSV file in append mode
+with open("csvCNN.csv", mode='a', newline='') as file:
+    csv_writer = csv.writer(file)
+    csv_writer.writerow([epoch, training_accuracy, validation_accuracy])
+"""

@@ -1,0 +1,257 @@
+Without Hyperparameter Tuning
+
+Epoch 1/10
+94/94 - 1s - loss: 0.0315 - 714ms/epoch - 8ms/step
+Epoch 2/10
+94/94 - 0s - loss: 0.0148 - 52ms/epoch - 554us/step
+Epoch 3/10
+94/94 - 0s - loss: 0.0118 - 51ms/epoch - 544us/step
+Epoch 4/10
+94/94 - 0s - loss: 0.0107 - 52ms/epoch - 551us/step
+Epoch 5/10
+94/94 - 0s - loss: 0.0098 - 52ms/epoch - 551us/step
+Epoch 6/10
+94/94 - 0s - loss: 0.0087 - 52ms/epoch - 549us/step
+Epoch 7/10
+94/94 - 0s - loss: 0.0078 - 52ms/epoch - 553us/step
+Epoch 8/10
+94/94 - 0s - loss: 0.0069 - 51ms/epoch - 540us/step
+Epoch 9/10
+94/94 - 0s - loss: 0.0062 - 50ms/epoch - 534us/step
+Epoch 10/10
+94/94 - 0s - loss: 0.0054 - 51ms/epoch - 541us/step
+3/3 [==============================] - 0s 712us/step
+2/2 [==============================] - 0s 571us/step
+Train Score: 36.46 RMSE
+Test Score: 105.20 RMSE
+
+With Hyperparameter Tuning
+
+[I 2024-01-17 13:16:32,964] A new study created in memory with name: no-name-669a816c-1623-422b-b1f8-96aaf1b02f3b
+3/3 [==============================] - 0s 711us/step
+2/2 [==============================] - 0s 547us/step
+[I 2024-01-17 13:16:34,318] Trial 0 finished with value: 198.33021565295766 and parameters: {'lstm_units': 1, 'epochs': 23, 'batch_size': 12}. Best is trial 0 with value: 198.33021565295766.
+3/3 [==============================] - 0s 618us/step
+2/2 [==============================] - 0s 552us/step
+[I 2024-01-17 13:16:35,624] Trial 1 finished with value: 149.60643022519793 and parameters: {'lstm_units': 6, 'epochs': 33, 'batch_size': 11}. Best is trial 1 with value: 149.60643022519793.
+3/3 [==============================] - 0s 731us/step
+2/2 [==============================] - 0s 537us/step
+[I 2024-01-17 13:16:36,789] Trial 2 finished with value: 220.99781128138633 and parameters: {'lstm_units': 4, 'epochs': 14, 'batch_size': 14}. Best is trial 1 with value: 149.60643022519793.
+3/3 [==============================] - 0s 617us/step
+2/2 [==============================] - 0s 567us/step
+[I 2024-01-17 13:16:38,228] Trial 3 finished with value: 117.0327963421007 and parameters: {'lstm_units': 4, 'epochs': 29, 'batch_size': 5}. Best is trial 3 with value: 117.0327963421007.
+3/3 [==============================] - 0s 691us/step
+2/2 [==============================] - 0s 528us/step
+[I 2024-01-17 13:16:40,523] Trial 4 finished with value: 49.2170981808968 and parameters: {'lstm_units': 4, 'epochs': 46, 'batch_size': 2}. Best is trial 4 with value: 49.2170981808968.
+3/3 [==============================] - 0s 650us/step
+2/2 [==============================] - 0s 552us/step
+[I 2024-01-17 13:16:41,731] Trial 5 finished with value: 197.54997593067642 and parameters: {'lstm_units': 5, 'epochs': 18, 'batch_size': 12}. Best is trial 4 with value: 49.2170981808968.
+3/3 [==============================] - 0s 737us/step
+2/2 [==============================] - 0s 574us/step
+[I 2024-01-17 13:16:42,937] Trial 6 finished with value: 220.86180165265537 and parameters: {'lstm_units': 2, 'epochs': 47, 'batch_size': 32}. Best is trial 4 with value: 49.2170981808968.
+3/3 [==============================] - 0s 722us/step
+2/2 [==============================] - 0s 546us/step
+[I 2024-01-17 13:16:44,046] Trial 7 finished with value: 257.09550671795586 and parameters: {'lstm_units': 2, 'epochs': 14, 'batch_size': 14}. Best is trial 4 with value: 49.2170981808968.
+3/3 [==============================] - 0s 681us/step
+2/2 [==============================] - 0s 623us/step
+[I 2024-01-17 13:16:45,443] Trial 8 finished with value: 189.2260773947557 and parameters: {'lstm_units': 3, 'epochs': 27, 'batch_size': 12}. Best is trial 4 with value: 49.2170981808968.
+3/3 [==============================] - 0s 683us/step
+2/2 [==============================] - 0s 571us/step
+[I 2024-01-17 13:16:46,749] Trial 9 finished with value: 121.65730830577712 and parameters: {'lstm_units': 10, 'epochs': 24, 'batch_size': 6}. Best is trial 4 with value: 49.2170981808968.
+3/3 [==============================] - 0s 697us/step
+2/2 [==============================] - 0s 550us/step
+[I 2024-01-17 13:16:48,007] Trial 10 finished with value: 146.5697659652155 and parameters: {'lstm_units': 7, 'epochs': 48, 'batch_size': 23}. Best is trial 4 with value: 49.2170981808968.
+3/3 [==============================] - 0s 732us/step
+2/2 [==============================] - 0s 654us/step
+[I 2024-01-17 13:16:49,932] Trial 11 finished with value: 48.44043681693024 and parameters: {'lstm_units': 8, 'epochs': 37, 'batch_size': 2}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 681us/step
+2/2 [==============================] - 0s 531us/step
+[I 2024-01-17 13:16:52,806] Trial 12 finished with value: 50.623369553847176 and parameters: {'lstm_units': 8, 'epochs': 38, 'batch_size': 1}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 683us/step
+2/2 [==============================] - 0s 599us/step
+[I 2024-01-17 13:16:56,045] Trial 13 finished with value: 49.80035968146452 and parameters: {'lstm_units': 9, 'epochs': 40, 'batch_size': 1}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 733us/step
+2/2 [==============================] - 0s 566us/step
+[I 2024-01-17 13:16:57,105] Trial 14 finished with value: 272.1762551002738 and parameters: {'lstm_units': 7, 'epochs': 6, 'batch_size': 22}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 638us/step
+2/2 [==============================] - 0s 594us/step
+[I 2024-01-17 13:16:58,645] Trial 15 finished with value: 79.82470250687302 and parameters: {'lstm_units': 6, 'epochs': 42, 'batch_size': 6}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 690us/step
+2/2 [==============================] - 0s 583us/step
+[I 2024-01-17 13:16:59,827] Trial 16 finished with value: 213.43900477009146 and parameters: {'lstm_units': 10, 'epochs': 35, 'batch_size': 20}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 641us/step
+2/2 [==============================] - 0s 566us/step
+[I 2024-01-17 13:17:01,332] Trial 17 finished with value: 98.99335947587575 and parameters: {'lstm_units': 8, 'epochs': 50, 'batch_size': 8}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 698us/step
+2/2 [==============================] - 0s 522us/step
+[I 2024-01-17 13:17:03,290] Trial 18 finished with value: 50.35080956214816 and parameters: {'lstm_units': 5, 'epochs': 43, 'batch_size': 3}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 654us/step
+2/2 [==============================] - 0s 543us/step
+[I 2024-01-17 13:17:04,702] Trial 19 finished with value: 192.57017119868877 and parameters: {'lstm_units': 8, 'epochs': 33, 'batch_size': 30}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 643us/step
+2/2 [==============================] - 0s 596us/step
+[I 2024-01-17 13:17:06,149] Trial 20 finished with value: 164.01313195469322 and parameters: {'lstm_units': 4, 'epochs': 45, 'batch_size': 8}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 793us/step
+2/2 [==============================] - 0s 553us/step
+[I 2024-01-17 13:17:08,138] Trial 21 finished with value: 49.541370154480106 and parameters: {'lstm_units': 9, 'epochs': 40, 'batch_size': 2}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 685us/step
+2/2 [==============================] - 0s 563us/step
+[I 2024-01-17 13:17:10,001] Trial 22 finished with value: 49.95627662471075 and parameters: {'lstm_units': 9, 'epochs': 37, 'batch_size': 3}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 702us/step
+2/2 [==============================] - 0s 566us/step
+[I 2024-01-17 13:17:13,030] Trial 23 finished with value: 49.837811267515384 and parameters: {'lstm_units': 9, 'epochs': 41, 'batch_size': 1}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 680us/step
+2/2 [==============================] - 0s 549us/step
+[I 2024-01-17 13:17:14,352] Trial 24 finished with value: 152.28163873454304 and parameters: {'lstm_units': 7, 'epochs': 31, 'batch_size': 8}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 699us/step
+2/2 [==============================] - 0s 576us/step
+[I 2024-01-17 13:17:16,443] Trial 25 finished with value: 50.02102663138025 and parameters: {'lstm_units': 10, 'epochs': 44, 'batch_size': 4}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 663us/step
+2/2 [==============================] - 0s 526us/step
+[I 2024-01-17 13:17:17,641] Trial 26 finished with value: 131.0041478606847 and parameters: {'lstm_units': 6, 'epochs': 38, 'batch_size': 17}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 736us/step
+2/2 [==============================] - 0s 603us/step
+[I 2024-01-17 13:17:19,088] Trial 27 finished with value: 84.47750685509925 and parameters: {'lstm_units': 8, 'epochs': 50, 'batch_size': 9}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 654us/step
+2/2 [==============================] - 0s 557us/step
+[I 2024-01-17 13:17:21,095] Trial 28 finished with value: 77.86592189128532 and parameters: {'lstm_units': 3, 'epochs': 46, 'batch_size': 3}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 672us/step
+2/2 [==============================] - 0s 556us/step
+[I 2024-01-17 13:17:22,581] Trial 29 finished with value: 140.8734467273248 and parameters: {'lstm_units': 1, 'epochs': 36, 'batch_size': 6}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 639us/step
+2/2 [==============================] - 0s 549us/step
+[I 2024-01-17 13:17:23,799] Trial 30 finished with value: 152.29239534242322 and parameters: {'lstm_units': 9, 'epochs': 40, 'batch_size': 27}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 641us/step
+2/2 [==============================] - 0s 537us/step
+[I 2024-01-17 13:17:26,792] Trial 31 finished with value: 49.13638966170372 and parameters: {'lstm_units': 9, 'epochs': 40, 'batch_size': 1}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 632us/step
+2/2 [==============================] - 0s 534us/step
+[I 2024-01-17 13:17:29,418] Trial 32 finished with value: 48.789572636432105 and parameters: {'lstm_units': 9, 'epochs': 33, 'batch_size': 1}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 703us/step
+2/2 [==============================] - 0s 539us/step
+[I 2024-01-17 13:17:31,402] Trial 33 finished with value: 53.647044962205946 and parameters: {'lstm_units': 10, 'epochs': 33, 'batch_size': 4}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 686us/step
+2/2 [==============================] - 0s 559us/step
+[I 2024-01-17 13:17:32,678] Trial 34 finished with value: 111.97642043182027 and parameters: {'lstm_units': 7, 'epochs': 30, 'batch_size': 10}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 645us/step
+2/2 [==============================] - 0s 566us/step
+[I 2024-01-17 13:17:34,083] Trial 35 finished with value: 179.4014150787177 and parameters: {'lstm_units': 5, 'epochs': 26, 'batch_size': 5}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 691us/step
+2/2 [==============================] - 0s 530us/step
+[I 2024-01-17 13:17:35,558] Trial 36 finished with value: 51.82549328986063 and parameters: {'lstm_units': 8, 'epochs': 20, 'batch_size': 2}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 688us/step
+2/2 [==============================] - 0s 590us/step
+[I 2024-01-17 13:17:36,944] Trial 37 finished with value: 174.2245096310219 and parameters: {'lstm_units': 4, 'epochs': 35, 'batch_size': 7}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 726us/step
+2/2 [==============================] - 0s 542us/step
+[I 2024-01-17 13:17:38,216] Trial 38 finished with value: 157.9519686427088 and parameters: {'lstm_units': 3, 'epochs': 32, 'batch_size': 14}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 677us/step
+2/2 [==============================] - 0s 539us/step
+[I 2024-01-17 13:17:39,992] Trial 39 finished with value: 50.27772100587807 and parameters: {'lstm_units': 9, 'epochs': 43, 'batch_size': 4}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 666us/step
+2/2 [==============================] - 0s 560us/step
+[I 2024-01-17 13:17:41,273] Trial 40 finished with value: 186.22141690305278 and parameters: {'lstm_units': 6, 'epochs': 29, 'batch_size': 11}. Best is trial 11 with value: 48.44043681693024.
+3/3 [==============================] - 0s 709us/step
+2/2 [==============================] - 0s 590us/step
+[I 2024-01-17 13:17:44,251] Trial 41 finished with value: 48.337960553379155 and parameters: {'lstm_units': 9, 'epochs': 39, 'batch_size': 1}. Best is trial 41 with value: 48.337960553379155.
+3/3 [==============================] - 0s 677us/step
+2/2 [==============================] - 0s 612us/step
+[I 2024-01-17 13:17:47,632] Trial 42 finished with value: 48.751585316211205 and parameters: {'lstm_units': 10, 'epochs': 38, 'batch_size': 1}. Best is trial 41 with value: 48.337960553379155.
+3/3 [==============================] - 0s 706us/step
+2/2 [==============================] - 0s 730us/step
+[I 2024-01-17 13:17:50,328] Trial 43 finished with value: 49.74915208060736 and parameters: {'lstm_units': 10, 'epochs': 34, 'batch_size': 1}. Best is trial 41 with value: 48.337960553379155.
+3/3 [==============================] - 0s 676us/step
+2/2 [==============================] - 0s 560us/step
+[I 2024-01-17 13:17:51,852] Trial 44 finished with value: 58.55383172819114 and parameters: {'lstm_units': 10, 'epochs': 38, 'batch_size': 5}. Best is trial 41 with value: 48.337960553379155.
+3/3 [==============================] - 0s 641us/step
+2/2 [==============================] - 0s 627us/step
+[I 2024-01-17 13:17:54,779] Trial 45 finished with value: 48.918593060810935 and parameters: {'lstm_units': 9, 'epochs': 38, 'batch_size': 1}. Best is trial 41 with value: 48.337960553379155.
+3/3 [==============================] - 0s 676us/step
+2/2 [==============================] - 0s 543us/step
+[I 2024-01-17 13:17:56,616] Trial 46 finished with value: 50.178314768155516 and parameters: {'lstm_units': 8, 'epochs': 37, 'batch_size': 3}. Best is trial 41 with value: 48.337960553379155.
+3/3 [==============================] - 0s 754us/step
+2/2 [==============================] - 0s 576us/step
+[I 2024-01-17 13:17:58,001] Trial 47 finished with value: 137.74474895113988 and parameters: {'lstm_units': 10, 'epochs': 25, 'batch_size': 5}. Best is trial 41 with value: 48.337960553379155.
+3/3 [==============================] - 0s 726us/step
+2/2 [==============================] - 0s 551us/step
+[I 2024-01-17 13:17:59,723] Trial 48 finished with value: 50.65641494838635 and parameters: {'lstm_units': 9, 'epochs': 28, 'batch_size': 2}. Best is trial 41 with value: 48.337960553379155.
+3/3 [==============================] - 0s 706us/step
+2/2 [==============================] - 0s 572us/step
+[I 2024-01-17 13:18:00,876] Trial 49 finished with value: 191.52747802932677 and parameters: {'lstm_units': 7, 'epochs': 8, 'batch_size': 7}. Best is trial 41 with value: 48.337960553379155.
+Epoch 1/39
+94/94 - 1s - loss: 0.0375 - 700ms/epoch - 7ms/step
+Epoch 2/39
+94/94 - 0s - loss: 0.0169 - 52ms/epoch - 549us/step
+Epoch 3/39
+94/94 - 0s - loss: 0.0135 - 51ms/epoch - 545us/step
+Epoch 4/39
+94/94 - 0s - loss: 0.0122 - 51ms/epoch - 541us/step
+Epoch 5/39
+94/94 - 0s - loss: 0.0110 - 52ms/epoch - 549us/step
+Epoch 6/39
+94/94 - 0s - loss: 0.0096 - 52ms/epoch - 549us/step
+Epoch 7/39
+94/94 - 0s - loss: 0.0084 - 52ms/epoch - 555us/step
+Epoch 8/39
+94/94 - 0s - loss: 0.0072 - 52ms/epoch - 555us/step
+Epoch 9/39
+94/94 - 0s - loss: 0.0063 - 52ms/epoch - 555us/step
+Epoch 10/39
+94/94 - 0s - loss: 0.0052 - 51ms/epoch - 548us/step
+Epoch 11/39
+94/94 - 0s - loss: 0.0043 - 51ms/epoch - 543us/step
+Epoch 12/39
+94/94 - 0s - loss: 0.0036 - 52ms/epoch - 548us/step
+Epoch 13/39
+94/94 - 0s - loss: 0.0031 - 52ms/epoch - 550us/step
+Epoch 14/39
+94/94 - 0s - loss: 0.0027 - 51ms/epoch - 547us/step
+Epoch 15/39
+94/94 - 0s - loss: 0.0025 - 51ms/epoch - 545us/step
+Epoch 16/39
+94/94 - 0s - loss: 0.0023 - 51ms/epoch - 546us/step
+Epoch 17/39
+94/94 - 0s - loss: 0.0022 - 52ms/epoch - 550us/step
+Epoch 18/39
+94/94 - 0s - loss: 0.0020 - 52ms/epoch - 548us/step
+Epoch 19/39
+94/94 - 0s - loss: 0.0022 - 52ms/epoch - 550us/step
+Epoch 20/39
+94/94 - 0s - loss: 0.0021 - 51ms/epoch - 547us/step
+Epoch 21/39
+94/94 - 0s - loss: 0.0021 - 52ms/epoch - 550us/step
+Epoch 22/39
+94/94 - 0s - loss: 0.0021 - 51ms/epoch - 540us/step
+Epoch 23/39
+94/94 - 0s - loss: 0.0020 - 51ms/epoch - 545us/step
+Epoch 24/39
+94/94 - 0s - loss: 0.0020 - 52ms/epoch - 550us/step
+Epoch 25/39
+94/94 - 0s - loss: 0.0021 - 50ms/epoch - 536us/step
+Epoch 26/39
+94/94 - 0s - loss: 0.0020 - 50ms/epoch - 532us/step
+Epoch 27/39
+94/94 - 0s - loss: 0.0021 - 51ms/epoch - 539us/step
+Epoch 28/39
+94/94 - 0s - loss: 0.0020 - 50ms/epoch - 533us/step
+Epoch 29/39
+94/94 - 0s - loss: 0.0021 - 52ms/epoch - 550us/step
+Epoch 30/39
+94/94 - 0s - loss: 0.0021 - 52ms/epoch - 554us/step
+Epoch 31/39
+94/94 - 0s - loss: 0.0020 - 51ms/epoch - 546us/step
+Epoch 32/39
+94/94 - 0s - loss: 0.0022 - 50ms/epoch - 536us/step
+Epoch 33/39
+94/94 - 0s - loss: 0.0021 - 51ms/epoch - 546us/step
+Epoch 34/39
+94/94 - 0s - loss: 0.0021 - 51ms/epoch - 545us/step
+Epoch 35/39
+94/94 - 0s - loss: 0.0021 - 51ms/epoch - 547us/step
+Epoch 36/39
+94/94 - 0s - loss: 0.0021 - 51ms/epoch - 544us/step
+Epoch 37/39
+94/94 - 0s - loss: 0.0021 - 51ms/epoch - 547us/step
+Epoch 38/39
+94/94 - 0s - loss: 0.0020 - 52ms/epoch - 554us/step
+Epoch 39/39

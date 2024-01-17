@@ -1,0 +1,6 @@
+Without Tuning:
+Loss,Accuracy
+"[0.5369784832000732, 0.9333333373069763]"
+With Tuning:
+Loss,Accuracy
+"[0.32739830017089844, 0.9666666388511658]"

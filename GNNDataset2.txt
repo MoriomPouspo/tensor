@@ -1,0 +1,7 @@
+With Hyperparameter Tuning:
+
+Best Test Accuracy: 0.8130 | Best Hyperparameters: {'learning_rate': 0.01, 'hidden_size': 64}
+
+Without Hyperparameter Tuning:
+
+Test Accuracy: 0.7970
